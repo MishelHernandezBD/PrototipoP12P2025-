@@ -1,16 +1,14 @@
 #include <iostream>
-
+#include "facultad.h"
 using namespace std;
 
 int main()
 {
-    Facultad facultad
-    char opcion;
-    bool repetir = true;
+    Facultad facultad;
 
-    do{
-        system("cls")
-    }
+    srand(getpid());
+
+    Facultad.llamaCiclo();
 
     return 0;
 }
