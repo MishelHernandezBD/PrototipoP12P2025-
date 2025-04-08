@@ -1,3 +1,4 @@
+//Creado por britany Mishel Hernandez Davila
 #include "facultad.h"
 #include <stdlib.h>
 #include <unistd.h>
