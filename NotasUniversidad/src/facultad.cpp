@@ -1,5 +1,9 @@
 #include "facultad.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -77,18 +81,16 @@ void Facultad::llamaCiclo(){
     Desplegar_Resultados(numeroDeCalculos, victoriasFacultad1, victoriasFacultad2, victoriasFacultad3);
 }
 
-void Facultad::imprimirMatrizLinea()
+void Facultad::imprimirMatrizLinea(){
     //Funciòn que despliega titulo de cada nota calculada
-    int x;
-
     cout << "+--------";
-    for (x = 0; x < NUMERO_NOTAS + 1; x++)
+    for (int x = 0; x < NUMERO_NOTAS + 1; x++)
     {
         cout << "+---------";
     }
     cout << "+\n";
 }
-float Facultad::imprimirMatriz(float matriz[NUMERO_ALUMNOS][NUMERO_NOTAS + 1], char alumnos[NUMERO_ALUMNOS][MAXIMA_LONGITUD_CADENA], string nombreFacultad);
+float Facultad::imprimirMatriz(float matriz[NUMERO_ALUMNOS][NUMERO_NOTAS + 1], char alumnos[NUMERO_ALUMNOS][MAXIMA_LONGITUD_CADENA], string nombreFacultad)
 {
     //Funciòn que imprime la matriz en pantalla y realizando los calculos necesarios del promedio
     int y, x;
@@ -147,7 +149,7 @@ float Facultad::imprimirMatriz(float matriz[NUMERO_ALUMNOS][NUMERO_NOTAS + 1], c
 
     return promedioGeneral; //Retorno del promedio general por facultad
 }
-void Facultad::Desplegar_Resultados(int numeroDeCalculos, int victoriasFacultad1, int victoriasFacultad2, int victoriasFacultad3);
+void Facultad::Desplegar_Resultados(int numeroDeCalculos, int victoriasFacultad1, int victoriasFacultad2, int victoriasFacultad3)
 {
     cout << "\nResultados Finales" << endl;
 
@@ -169,7 +171,7 @@ void Facultad::Desplegar_Resultados(int numeroDeCalculos, int victoriasFacultad1
         cout << "Gano un total de:  " << victoriasFacultad3 << endl;
     }
 }
-void Facultad::llenarMatriz(float matriz[NUMERO_ALUMNOS][NUMERO_NOTAS + 1]);
+void Facultad::llenarMatriz(float matriz[NUMERO_ALUMNOS][NUMERO_NOTAS + 1])
 {
     //Funciòn que permite llenar cada matriz con valores aleatorios
     int y, x;

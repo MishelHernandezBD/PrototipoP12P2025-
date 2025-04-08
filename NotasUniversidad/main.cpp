@@ -4,10 +4,9 @@ using namespace std;
 
 int main()
 {
-    facultad facultades;
+    Facultad facultades;
 
     srand(getpid());
-
     facultades.llamaCiclo();
     return 0;
 }

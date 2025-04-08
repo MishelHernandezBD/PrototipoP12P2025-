@@ -7,3 +7,22 @@
 
 1744129728 c:\users\mishel\onedrive\documentos\programacion\programacion 1\prototipop12p2025\notasuniversidad\include\facultad.h
 
+1744133488 source:c:\users\mishel\onedrive\documentos\programacion\programacion 1\prototipop12p2025\prototipop12p2025-\notasuniversidad\main.cpp
+	<iostream>
+	"facultad.h"
+
+1744133622 c:\users\mishel\onedrive\documentos\programacion\programacion 1\prototipop12p2025\prototipop12p2025-\notasuniversidad\include\facultad.h
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<iostream>
+	<iomanip>
+
+1744133879 source:c:\users\mishel\onedrive\documentos\programacion\programacion 1\prototipop12p2025\prototipop12p2025-\notasuniversidad\src\facultad.cpp
+	"facultad.h"
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<iostream>
+	<iomanip>
+
